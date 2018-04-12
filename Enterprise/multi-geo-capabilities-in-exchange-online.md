@@ -228,7 +228,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
  
   - The size and type of mailbox.
  
-  - Thnumber of mailboxes being moved.
+  - The number of mailboxes being moved.
  
   - The availability of move resources.
 
@@ -242,7 +242,7 @@ Disabled mailboxes on Litigation Hold that are preserved for eDiscovery purposes
 3. Remove the license from the mailbox after it has been moved to the selected Geo to put it back into the disabled state.
 
 ### Create new cloud mailboxes in a specific Geo 
-To create a new mailbox in a sepcific Geo, you need to do either of these steps:
+To create a new mailbox in a specific Geo, you need to do either of these steps:
 
 - Configure the **PreferredDataLocation** value as described in the previous section *before* the mailbox is created in Exchange Online (for example, by configuring the **PreferredDataLocation** value on a user before assigning a license). 
 
