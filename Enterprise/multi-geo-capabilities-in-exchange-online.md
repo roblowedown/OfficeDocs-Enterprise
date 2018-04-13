@@ -275,6 +275,8 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
 
 For more information about creating new user accounts and finding LicenseAssignment values in Azure AD PowerShell, see [Create user accounts with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell) and [View licenses and services with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/view-licenses-and-services-with-office-365-powershell).
 
+Note: If you are using Exchange PowerShell to enable a mailbox and need the mailbox to be created directly in the Geo specified in PreferredDataLocation, you need to use an Exchange Online cmdlet such as Enable-Mailbox or New-Mailbox directly against the cloud service. If you use the Enable-RemoteMailbox on-premises Exchange cmdlet, the mailbox will be created in the default Geo
+
 ### Onboard existing on-premises mailboxes in a specific Geo
 You can use the standard onboarding tools and processes to migrate a mailbox from an on-premises Exchange organization to Exchange Online, including the [Migration dashboard in the EAC](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331), and the [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch) cmdlet in Exchange Online PowerShell.
 
